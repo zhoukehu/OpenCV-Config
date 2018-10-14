@@ -1,5 +1,3 @@
-#pragma once
-
 //OpenCVconfig.h  
 #pragma once  
 #include <opencv2/opencv.hpp>    
@@ -39,9 +37,9 @@ using namespace cv;
 #endif
 
 #if CV_MAJOR_VERSION==3
-	//下面代码适用官方编译的DLL，不包含contrib
+	//涓嬮潰浠ｇ爜閫傜敤瀹樻柟缂栬瘧鐨凞LL锛屼笉鍖呭惈contrib
 	//#pragma comment( lib, cvLIB("world") ) 
-	//下面代码适用自己编译的DLL，包含contrib
+	//涓嬮潰浠ｇ爜閫傜敤鑷繁缂栬瘧鐨凞LL锛屽寘鍚玞ontrib
 	#pragma comment( lib, cvLIB("aruco") )    
 	#pragma comment( lib, cvLIB("bgsegm") )  
 	#pragma comment( lib, cvLIB("bioinspired") )
